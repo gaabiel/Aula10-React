@@ -44,6 +44,7 @@ app.get('/alunos', (req, res) => {
         if (err) {
             return res.status(500).json({ error: 'Erro ao consultar alunos' });
         }
+        console.log(results);
         res.json(results);
     });
 });
